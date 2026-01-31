@@ -17,15 +17,15 @@ interface MusicPlayerProps {
 const PLAYLIST_DB: Record<MoodCategory, Record<MusicLanguage, string[]>> = {
   [MoodCategory.happy]: {
     English: ['37i9dQZF1DXdPec7aLTmlC', '37i9dQZF1DX3rxVfbeq1Pn', '5huWTkhjom3e1XErPgkqZq'], // Happy Hits, Good Vibes
-    Hindi: ['4nNVfQ9eWidZXkBKZN5li4', '37i9dQZF1DX6QZp6p88j2w'], // Bollywood Butter (Official), Bollywood Central
-    Tamil: ['37i9dQZF1DXd0D0xidFHhW', '37i9dQZF1DX1H8jTqFfO7Z'], // Hot Hits Tamil (Official), Top 50
-    Malayalam: ['37i9dQZF1DWTR4ZOXtfd9p', '37i9dQZF1DX6QZp6p88j2w'], // Hot Hits Malayalam (Verified), Fast Songs
+    Hindi: ['4nNVfQ9eWidZXkBKZN5li4', '37i9dQZF1DX6QZp6p88j2w', '37i9dQZF1DX0XUfTFmNBRM'], // Bollywood Butter (Official), Bollywood Central
+    Tamil: ['37i9dQZF1DXd0D0xidFHhW', '37i9dQZF1DX1H8jTqFfO7Z', '37i9dQZF1DX4Im4BTs2WMg'], // Hot Hits Tamil (Official), Top 50
+    Malayalam: ['37i9dQZF1DWTR4ZOXtfd9p', '37i9dQZF1DX6QZp6p88j2w', '37i9dQZF1DWTYKFynxp6Fs'], // Hot Hits Malayalam (Verified), Fast Songs
   },
   [MoodCategory.sad]: {
-    English: ['37i9dQZF1DX7qK8ma5wgG1', '37i9dQZF1DWSqBruwoIXkA'], // Sad Songs, Life Sucks
-    Hindi: ['37i9dQZF1DWXtlo6ENS92N', '37i9dQZF1DX5q67ZpWyRrZ'], // Bollywood Central (Sad/Chill), Sentimental
-    Tamil: ['37i9dQZF1DXc6qgnxonYgp', '37i9dQZF1DX3mF1G8K8p86'], // Tamil Romance (Often Sad/Melody), Sad Generic
-    Malayalam: ['3qrM3dmqyB9g0gq9WNNvZI', '37i9dQZF1DXcK0XGk821Uo'], // Malayalam To Sleep (Calm/Sad), Melody Hits
+    English: ['37i9dQZF1DX7qK8ma5wgG1', '37i9dQZF1DWSqBruwoIXkA', '25ZzkJkOuYir9kHr2CqwPQ'], // Sad Songs, Life Sucks
+    Hindi: ['37i9dQZF1DWXtlo6ENS92N', '37i9dQZF1DX5q67ZpWyRrZ', '189Sow1xr7R94oSKs4kISc'], // Bollywood Central (Sad/Chill), Sentimental
+    Tamil: ['37i9dQZF1DXc6qgnxonYgp', '37i9dQZF1DX3mF1G8K8p86', '0AyOLKzLZZmlliok7bu1mp'], // Tamil Romance (Often Sad/Melody), Sad Generic
+    Malayalam: ['3qrM3dmqyB9g0gq9WNNvZI', '37i9dQZF1DXcK0XGk821Uo', '05975N5TZBOmYsHFnqxXWZ'], // Malayalam To Sleep (Calm/Sad), Melody Hits
   },
   [MoodCategory.energetic]: {
     English: ['37i9dQZF1DX76Wlfdnj7AP', '37i9dQZF1DX0HRj9P7NxeE'], // Beast Mode, Workout
@@ -34,22 +34,22 @@ const PLAYLIST_DB: Record<MoodCategory, Record<MusicLanguage, string[]>> = {
     Malayalam: ['37i9dQZF1DWTR4ZOXtfd9p', '1GEN83YaODIWUrLJsWKUlM'], // Hot Hits Malayalam, Fast Songs
   },
   [MoodCategory.calm]: {
-    English: ['37i9dQZF1DWVqfgj8NqCsR', '37i9dQZF1DX4WYpdgoICN6'], // Chill Hits, Chillout Lounge
-    Hindi: ['37i9dQZF1DX0F3lb30Ibi9', '37i9dQZF1DWSwxyU5zGZYe'], // Lofi Vibe Hindi (Official), Bollywood Acoustic
-    Tamil: ['37i9dQZF1DXc6qgnxonYgp', '37i9dQZF1DWW2h0Qc9f7bH'], // Tamil Romance (Verified), Acoustic
-    Malayalam: ['3qrM3dmqyB9g0gq9WNNvZI', '37i9dQZF1DXcK0XGk821Uo'], // Songs to Sleep (Verified), Melody Hits
+    English: ['37i9dQZF1DWVqfgj8NqCsR', '37i9dQZF1DX4WYpdgoICN6', '4kOdiP5gbzocwxQ8s2UTOF'], // Chill Hits, Chillout Lounge
+    Hindi: ['37i9dQZF1DX0F3lb30Ibi9', '37i9dQZF1DWSwxyU5zGZYe', '5jYQ4O9Ii3tQcSbJMtVrk8'], // Lofi Vibe Hindi (Official), Bollywood Acoustic
+    Tamil: ['37i9dQZF1DXc6qgnxonYgp', '37i9dQZF1DWW2h0Qc9f7bH', '0TOng1FTBaa6bHJcfack1S'], // Tamil Romance (Verified), Acoustic
+    Malayalam: ['3qrM3dmqyB9g0gq9WNNvZI', '37i9dQZF1DXcK0XGk821Uo', '5JgrCNuRqcIgXfiN3JTclm'], // Songs to Sleep (Verified), Melody Hits
   },
   [MoodCategory.angry]: {
     English: ['37i9dQZF1DWXepGEFFm3J4', '37i9dQZF1DXcF6B6QPhFDv', '1XXNxS5rVnpjqCfH0EQ1OE'], // Rock Classics, Adrenaline Workout
-    Hindi: ['37i9dQZF1DX2SThom9u2re', '37i9dQZF1DWT0qC8YabOaR'], // Bollywood Rock, Desi Party
-    Tamil: ['6Yp1xOHC2KLqyqjuq35bFn', '37i9dQZF1DX1H8jTqFfO7Z'], // Kuthu Fire (High Energy), Top 50
-    Malayalam: ['37i9dQZF1DWTR4ZOXtfd9p', '1GEN83YaODIWUrLJsWKUlM'], // Hot Hits (Energy), Fast Songs
+    Hindi: ['37i9dQZF1DX2SThom9u2re', '37i9dQZF1DWT0qC8YabOaR', '3SwdC5JTvQHXm6he11YCPK'], // Bollywood Rock, Desi Party
+    Tamil: ['6Yp1xOHC2KLqyqjuq35bFn', '37i9dQZF1DX1H8jTqFfO7Z', '3p8ejB7BscAVmEdyK7AtXx'], // Kuthu Fire (High Energy), Top 50
+    Malayalam: ['37i9dQZF1DWTR4ZOXtfd9p', '1GEN83YaODIWUrLJsWKUlM', '6tN3CIjjY36bOechiYtVLT'], // Hot Hits (Energy), Fast Songs
   },
   [MoodCategory.romantic]: {
-    English: ['37i9dQZF1DXcBWIGoYBM5M', '37i9dQZF1DX0r3x8OtiwEM'], // Love Pop, Romantic Ballads
-    Hindi: ['37i9dQZF1DXcKBPk6QDd4J', '37i9dQZF1DWUaJ60cbfh5n'], // Bollywood Mush (Official), Love Stories
+    English: ['37i9dQZF1DXcBWIGoYBM5M', '37i9dQZF1DX0r3x8OtiwEM', '4PStu9I5zd2QlzQsjL0mk4'], // Love Pop, Romantic Ballads
+    Hindi: ['37i9dQZF1DXcKBPk6QDd4J', '37i9dQZF1DWUaJ60cbfh5n', '0zc6Hq9OIAengtGG6a3lfs'], // Bollywood Mush (Official), Love Stories
     Tamil: ['37i9dQZF1DXc6qgnxonYgp', '4BME5NDpshjSW4Gxsnpyul', '37i9dQZF1EIUtYhOXKqLCG'], // Tamil Romance (Official), Melody
-    Malayalam: ['3qrM3dmqyB9g0gq9WNNvZI', '75oCXlWZGw02jLlMiRj8Nf'], // Melody/Sleep, Romantic
+    Malayalam: ['3qrM3dmqyB9g0gq9WNNvZI', '75oCXlWZGw02jLlMiRj8Nf', '1wvE3Zl4lKLnBh35LTHPyS'], // Melody/Sleep, Romantic
   },
   [MoodCategory.focused]: {
     English: ['37i9dQZF1DWZeKCadgRdKQ', '37i9dQZF1DX8Uebhn9wzrS'], // Deep Focus, Lo-Fi Beats
